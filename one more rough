@@ -1,0 +1,68 @@
+//code for movie ticket booking 
+#include<stdio.h>
+#include<time.h>
+#include<windows.h>
+#include<stdlib.h>
+void ticketbooking();
+void cancel();
+void bookedticket();
+void login();
+void exit();
+int main (){
+   system("cls");
+   FILE *movie;
+   int choice,movies;
+   char movies1[1000];
+   char movies2[100];
+   char movies3[100];
+   char movies4[100];
+   time_t starttime;
+   starttime=time(NULL);
+   printf("           ====================================================================================================\n");
+   printf("           |     |                                                                                      |     |\n");
+   printf("           |  P  |                                       Welcome                                        |  P  |\n");
+   printf("           |  L  |                                         To                                           |  L  |\n");
+   printf("           |  A  |                                    Plaxa Cinema                                      |  A  |\n");
+   printf("           |  X  |                                                                                      |  X  |\n");
+   printf("           |  A  |======================================================================================|  A  |\n");
+   printf("           |     |                                   Choose an option                                   |     |\n");
+   printf("           |     |                                                                                      |     |\n");
+   printf("           |  C  | (1) Ticket booking                                                                   |  C  |\n");
+   printf("           |  I  | (2) TO Cancel the Ticket                                                             |  I  |\n");
+   printf("           |  N  | (3) Show your booked ticket                                                          |  N  |\n");
+   printf("           |  E  | (4) Login                                                                            |  E  |\n");
+   printf("           |  M  | (5) Exit Program                                                                     |  M  |\n");
+   printf("           |  A  |                                                                                      |  A  |\n");
+   printf("           |     |                                                                                      |     |\n");
+   printf("           |     |                                                                                      |     |\n");
+   printf("           |     |                                                                                      |     |\n");
+   printf("           ====================================================================================================\n");
+   printf("Enter your choice : ");
+   scanf(" %d",&choice);
+   switch(choice){
+      case 1 : 
+       ticketbooking();
+      break;
+      case 2 :
+      cancel();
+      break;
+      case 3 :
+       bookedticket();
+      break;
+      case 4 :
+       login();
+      break;
+      case 5 :
+       exit();
+   }
+   }
+   void ticketbooking(){
+   }
+   void cancel(){
+   }
+   void bookedticket(){
+   }
+   void login(){
+   }
+   void exit(){
+   }
